@@ -25,8 +25,8 @@ If you want install the frontend libs run (inside web-app folder):
 ```
 
 Access:
-    - htpp://localhost:1337/
-    - htpp://localhost:1337/dashboard
-    - htpp://localhost:1337/login
-    - htpp://localhost:1337/register
-    - htpp://localhost:1337/logout
+ - htpp://localhost:1337/
+ - htpp://localhost:1337/dashboard
+ - htpp://localhost:1337/login
+ - htpp://localhost:1337/register
+ - htpp://localhost:1337/logout
