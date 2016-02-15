@@ -18,6 +18,12 @@ Start server:
     npm start
 ```
 
+Generate docs:
+```Shell
+    npm install -g apidoc
+    apidoc -i api/ -o apidoc/
+```
+
 If you want install the frontend libs run (inside web-app folder):
 ```Sheel
     npm install -g bower
