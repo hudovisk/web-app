@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/hudovisk/web-app.svg?branch=master)](https://travis-ci.org/hudovisk/web-app)
+
 Login sample with Node.js + Express + Passport.
 ================================================
 
