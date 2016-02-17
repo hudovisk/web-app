@@ -15,7 +15,10 @@ mongoose.connect('mongodb://localhost/test');
 require('./config/passport')(passport);
 
 //app middlewares
-app.use(morgan('dev'));
+//only show logs with arent testing
+if (process.env.NODE_ENV !== 'test') {
+    app.use(morgan('dev'));
+}
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -36,3 +39,13 @@ require('./routes')(app, passport)
 app.listen(port, function() {
     console.log('Listenning on port: ' + port);
 });
+
+module.exports = app;
+
+// db.createUser(
+//    {
+//      user: "admin",
+//      pwd: "cmpe165dbpassword",
+//      roles: [ "readWrite", "dbAdmin" ]
+//    }
+// )
