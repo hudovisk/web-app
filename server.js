@@ -41,11 +41,3 @@ app.listen(port, function() {
 });
 
 module.exports = app;
-
-// db.createUser(
-//    {
-//      user: "admin",
-//      pwd: "cmpe165dbpassword",
-//      roles: [ "readWrite", "dbAdmin" ]
-//    }
-// )
