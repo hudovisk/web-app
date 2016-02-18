@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/hudovisk/web-app.svg?branch=master)](https://travis-ci.org/hudovisk/web-app)
+[![Build Status](https://travis-ci.org/hudovisk/web-app.svg?branch=master)](https://travis-ci.org/hudovisk/web-app) [![Code Climate](https://codeclimate.com/github/hudovisk/web-app/badges/gpa.svg)](https://codeclimate.com/github/hudovisk/web-app) [![Issue Count](https://codeclimate.com/github/hudovisk/web-app/badges/issue_count.svg)](https://codeclimate.com/github/hudovisk/web-app)
 
 Login sample with Node.js + Express + Passport.
 ================================================

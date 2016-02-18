@@ -90,10 +90,6 @@ Whenever you feel stuck with your code and need help with it or you feel that yo
 
  - After merged you can delete the branch and start working on your next feature.
 
->**Note:** I am working in a way to automatically deploy the app whenever a push is made to master.
-> So we can deploy many times a day and have immediate feedback from the production version.
-> This should be implemented by next week and will work transparently for the team.
-
 >**Note:** I am also working in integrating the minify phase of the javascript and css files to use
 > in the production version.
 
@@ -125,6 +121,6 @@ Mocha is the test runner while cai provide an assert library to be used with moc
 ###JSHint:
 Static code analyzer that looks into code style and possible errors.
 
-##Fly or Github Webhooks:
-Automated deploy. video: https://www.youtube.com/watch?v=XxRuW1pfGTI&list=PLoYCgNOIyGAACzU6GliHJDp4kmOw3NFsh&index=7
+###Github Webhooks:
+I created another webserver that listens in a different port (30000) and whenever the master branch gets pushed, github will post to this webserver that will trigger a shell script that pull the latest code into the ec2 instance and restarts the server to deploy.
 
