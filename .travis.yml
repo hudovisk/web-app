@@ -12,9 +12,19 @@ node_js:
 - stable
 - '4.3'
 - iojs
+
 before_script:
 - npm install grunt-cli -g
+- npm install -g codeclimate-test-reporter
+
+after_script:
+  - codeclimate-test-reporter < lcov.info
+
+addons:
+  code_climate:
+    repo_token: cb9add0c4d1c8b04e3697f697bc7b0abbfd5d4750243449cdb1b8b685df9942a
 
 notifications:
   slack:
     secure: bOvtmHNtyPDIRfjt2IOtROJasbIPW5czQmggrUIQ4dENh4DIFXSQKdk9ptADcZHu04JEL6xl4Jpev4Jk8fIF92AjPR75hyyQUcdcgk9VVjVCqDogxLfioBZwhbfceQyqMdoetBOE+cLL/FP03oMOmRx5nrPF4ichsV5rAtp8vFOFZCgKVmjHmwZJEzRpl8dezwQEVMWzlKkYlgKyEyyNGGUAcgloc9ItNP3p4vgbBI/TTqTu8gtvfEUEqTL4Hk6XRVzHrNRI9bg00my1t/EOXiF2fu6LpZpzJu8yOw01ZfNw+YTOcqVTC++wCENfIDiewF334SKUJVkfQBqnBmsrwqkXXvpbe55YYN4dn2rY+wxF/3dj0/N4Z2+OLPfNXGUUIhBg6r9JVZRjrvs9cNgbKYhkrf7UkzBYhuSKJ7lvetDtE93qhpw8p+MemsXOtYhTLNvPh/FetJt0ZEhxyCgXCtufgPlnldn/sdjuJoA5bj7Nnh3DP0lFF4Vzx9y4JdbyBav9O/t6FLIAiKXq/6zsMxmYNcW+12zVyxYBsMIPtjtdfrj3i4lfR7vRl2ozgAEiPhG+/d5ahFVFFrMQvD+esInI/kLXgwqe5ejyw/jZbEBRKtuYZdTK6be15mBcLYDibmrfEmVUh05LA1/bmjZFN9x/95bMdlWm4oUwM0QER98=
+
