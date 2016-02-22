@@ -20,8 +20,9 @@ after_script:
   - codeclimate-test-reporter < lcov.info
 
 addons:
-    code_climate:
-        repo_token: cb9add0c4d1c8b04e3697f697bc7b0abbfd5d4750243449cdb1b8b685df9942a
+  code_climate:
+    repo_token: 
+      secure: "guIWEgG372FliskYf7Y5FGlcM+F5MXEdvRkMLc8AimHw4H6nPOH7I/zKo18WtBxvXbOz8GORgV0MkH7PYNlnG6F4b0EynzLb1kDDpiKFe+zaOidC6us6k2wV13HZcn8RJdg44tFbvhQhOgxWtxn6cLe6hYJcZjrpUz7FWE/GPgPsLgvSIOYoiEQpSg6yqHL8IGrHVDXbM9vXpq7fd5q1sQhbtQnR9Yo6e/lJA5Yd36N34aRl+p9X1S9IBUUD4+wZ1qLGvFp2tqdv8hxpxAsRQTTWVY1n4QuZvEf/VAv33tNLwnvS4W1x89EFzguoO6ib6HLsthl1aEq8H+jLg0OkYqdmEPS6gf4OqByNANsobV/Mlm+McNWs1GtWxFM/Dzw3OiEmFJiitk144hc9+icB0Rpb3eP+BPwFxueS2YEgV2GpZ4bnfpyI+YC91QM2uPpE1mUsz3kdc81V4Ji2mFaKl3cjaMuUw1UOc1C0+0Lmie3tXTmaV4oXTM52rLZFGD1CrEv3PB4VOMapyCD3kXHv3k6h/9UCWoqmacvFNuFTwZMUCBLYbgx6cyiWWusM3ETcxCqHtyCj6rJG8rS8zifSt1nc4qr3BNZPvIeB6br1E+lprvz91lXlWCRoT/VBQ6q+dy6GXEeG54KRnArpnaQjshtM0ck3dQBmwqS7M9C/KOY="
 
 notifications:
   slack:
